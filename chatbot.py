@@ -5,9 +5,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import streamlit as st
 
 
-# url_model = "https://huggingface.co/TheBloke/Thespis-13B-v0.3-GGUF/blob/main/thespis-13b-v0.3.Q5_K_M.gguf"
 def init_conversation():
-    # model_path = "./models/thespis-13b-v0.3.Q5_K_M.gguf"
     model_path = "./models/llama-2-13b-chat.Q5_K_M.gguf"
 
     n_gpu_layers = 1

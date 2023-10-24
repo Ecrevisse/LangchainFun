@@ -68,7 +68,6 @@ class CustomOutputParser(AgentOutputParser):
         )
 
 
-# url_model = "https://huggingface.co/TheBloke/Thespis-13B-v0.3-GGUF/blob/main/thespis-13b-v0.3.Q5_K_M.gguf"
 @st.cache_resource
 def init_agent():
     tools = [
@@ -118,7 +117,6 @@ def init_agent():
 
     output_parser = CustomOutputParser()
 
-    # model_path = "./models/thespis-13b-v0.3.Q5_K_M.gguf"
     model_path = "./models/llama-2-13b-chat.Q5_K_M.gguf"
 
     n_gpu_layers = 1
